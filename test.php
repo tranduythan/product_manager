@@ -24,9 +24,8 @@ class Customer extends Person{
 	public function getCardType(){return $this->cardType;}
 	public function setCardType($value){$this->cardType = $value;}
 	public function getFullName(){
+		echo $this->getPhone();
 		return $this->getFirstName() . ' ' . $this->getLastName().' '.$this->getPhone().' '.$this->getEmail();
 	}
 }
-
-
 ?>
